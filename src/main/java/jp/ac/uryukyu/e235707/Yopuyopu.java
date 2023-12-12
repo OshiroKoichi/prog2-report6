@@ -4,10 +4,13 @@ import java.util.Random;
 
 import java.util.Scanner;
 
+import java.util.ArrayList;
+
 public class Yopuyopu {
 
-    public String yopu;
+    String yopu;
     int randomyopu;
+    ArrayList<String> gameScreen = new ArrayList<>();
     
     public Yopuyopu(String yopu){
        this.yopu = yopu;
@@ -29,7 +32,7 @@ public class Yopuyopu {
         }
     }
 
-    public void fall(String yopu){
+    public void fall(){
             Scanner scanner = new Scanner(System.in);
             System.out.println("ここに落としますか？(yes/no):");
             String userInput = scanner.nextLine().toLowerCase();
