@@ -8,9 +8,7 @@ public class BlueYopu extends Yopuyopu {
 
     @Override
     public void yopu(){
-        if(randomyopu == 1){
             System.out.println("青よぷが降ってきた");
-            yopu = "青yopu";
-        }
+            yopu = "青よぷ";
     }
 }

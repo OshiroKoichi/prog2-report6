@@ -8,17 +8,17 @@ public class Yopuyopu {
 
     String yopu;
     int randomyopu;
+    int yopucount = 0;
     ArrayList<String> gameScreen = new ArrayList<>();
     
     public Yopuyopu(String yopu){
        this.yopu = yopu;
+       
     }
 
     public void yopu(){
-        if (randomyopu == 0){
             System.out.println("赤よぷが降ってきた");
             yopu = "赤よぷ";
-        }
     }
 
     public void fall(){
