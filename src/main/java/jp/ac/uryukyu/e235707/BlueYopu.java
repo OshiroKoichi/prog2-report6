@@ -8,7 +8,7 @@ public class BlueYopu extends Yopuyopu {
 
     @Override
     public void yopu(){
-            System.out.println("青よぷが降ってきた");
+            System.out.println(yopu + "が降ってきた");
             yopu = "青よぷ";
     }
 }
