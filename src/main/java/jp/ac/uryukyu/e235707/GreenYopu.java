@@ -7,6 +7,7 @@ public class GreenYopu extends Yopuyopu{
     }
 
     @Override
+    //オーバーライドし、緑よぷを召喚する
     public void yopu(){
         System.out.println("緑よぷが降ってきた");
         yopu = "緑よぷ";
