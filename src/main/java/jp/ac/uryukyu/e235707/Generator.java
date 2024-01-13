@@ -47,7 +47,7 @@ public class Generator {
         System.out.println("マスの内容:");
         for (ArrayList<Integer> row : grid) {
             for (Integer cell : row) {
-                System.out.print(getColor(cell) + "\t");  // 整数に対応する色を表示
+                System.out.print(getcolor(cell) + "\t");  // 整数に対応する色を表示
             }
             System.out.println();
         }
@@ -65,7 +65,7 @@ public class Generator {
         }
     }
 
-    private String getColor(int number) {
+    private String getcolor(int number) {
         switch (number) {
             case 1:
                 return "赤";
