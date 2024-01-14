@@ -5,8 +5,6 @@ import java.util.ArrayList;
 public class Yopuyopu {
 
     String yopu;
-    int randomyopu;
-    ArrayList<String> gameScreen = new ArrayList<>();
     
     public Yopuyopu(String yopu){
        this.yopu = yopu;
