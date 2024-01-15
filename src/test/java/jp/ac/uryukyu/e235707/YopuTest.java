@@ -9,7 +9,6 @@ public class YopuTest {
     @Test
     public void testYopu(){
         Generator gneTest = new Generator();
-        gneTest.generate(0);
-        assertEquals()
+        gneTest.coordinate();
     }
 }

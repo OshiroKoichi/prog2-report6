@@ -1,4 +1,4 @@
-package main.java;
+
 
 import main.java.jp.ac.uryukyu.e235707.Generator;
 

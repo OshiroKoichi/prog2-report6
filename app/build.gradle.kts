@@ -19,6 +19,11 @@ repositories {
     mavenCentral()
 }
 
+application {
+    // Define the main class for the application.
+    mainClass.set("main.java.jp.ac.uryukyu.ie.e235707.Main")
+}
+
 dependencies {
     // Use JUnit Jupiter for testing.
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.3")
@@ -34,11 +39,6 @@ java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(21))
     }
-}
-
-application {
-    // Define the main class for the application.
-    mainClass.set("Main")
 }
 
 tasks.named<Test>("test") {
