@@ -43,24 +43,23 @@ public class Generator {
         } else {
             System.out.println("エラー: myListが空でないか、coordinatesのサイズがgridを超えています。");
         }
-
-        System.out.println("マスの内容:");
-        for (ArrayList<Integer> row : grid) {
-            for (Integer cell : row) {
-                System.out.print(getcolor(cell) + "\t");  // 整数に対応する色を表示
-            }
-            System.out.println();
-        }
+        printer();
     }
 
     private void generate() {
         Random random = new Random();
         int randomyopu = random.nextInt(3);
         if (randomyopu == 0) {
+            RedYopu red = new RedYopu("赤よぷ");
+            red.yopu();
             myList.add(1); // 赤: 1
         } else if (randomyopu == 1) {
+            BlueYopu blu = new BlueYopu("青よぷ");
+            blu.yopu();
             myList.add(2); // 青: 2
         } else if (randomyopu == 2) {
+            GreenYopu gre = new GreenYopu("緑よぷ");
+            gre.yopu();
             myList.add(3); // 緑: 3
         }
     }
@@ -75,6 +74,17 @@ public class Generator {
                 return "緑";
             default:
                 return "";
+        }
+    }
+
+    //マスの内容を表示
+    private void printer(){
+        System.out.println("マスの内容:");
+        for (ArrayList<Integer> row : grid) {
+            for (Integer cell : row) {
+                System.out.print(getcolor(cell) + "\t");  // 整数に対応する色を表示
+            }
+            System.out.println();
         }
     }
 }
